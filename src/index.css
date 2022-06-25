@@ -39,16 +39,37 @@ body {
   cursor: pointer;
 }
 
-.book-list li:hover{
+.book-list li:hover {
   text-decoration: line-through;
 }
 
-.book-list .title{
+.book-list .title {
   font-weight: 600;
   font-size: 1.2em;
 }
 
-.book-list .author{
+.book-list .author {
   font-weight: 300;
   font-size: 1em;
+}
+
+form {
+  padding: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  border: 0;
+  background-color: rgb(227, 227, 227);
+}
+
+input[type="submit"] {
+  margin: 10px auto;
+  background: #eee;
+  border: 0;
+  padding: 6px 20px;
+  display: block;
 }
