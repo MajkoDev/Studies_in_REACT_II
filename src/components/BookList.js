@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
+import NewBookForm from "./NewBookForm";
 
 export default function BookList() {
 
@@ -12,8 +13,8 @@ export default function BookList() {
     { id: 6, title: "Ulysses" },
   ]);
 
-  const addBook = () => {
-    setBooks([...books, {id: uuidv4(), title: 'Pale Fire'}])
+  const addBook = (title) => {
+    setBooks([...books, {id: uuidv4(), title}])
   }
 
   return (
@@ -23,7 +24,7 @@ export default function BookList() {
           return <li key={book.id}>{book.title}</li>;
         })}
       </ul>
-      <button onClick={addBook}>Add a book</button>
+      <NewBookForm addBook={addBook} />
     </div>
   );
 }

@@ -1,8 +1,8 @@
-import SongList from './components/SongList'
+import BookList from './components/BookList'
 
 function App() {
   return <div className='App'>
-    <SongList />
+    <BookList />
   </div>;
 }
 
